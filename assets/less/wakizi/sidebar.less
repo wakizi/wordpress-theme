@@ -1,0 +1,87 @@
+.sidebar {
+    font-size: @baseFontSize;
+    margin-bottom: 40px;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.sidebar-context h3,
+.sidebar-context h4 {
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+}
+
+.sidebar-context h4 {
+    line-height: @baseLineHeight - 2;
+}
+
+.sidebar-context {
+    position: relative;
+}
+
+.sidebar-context .help-bubble {
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: -60px;
+    width: 126px;
+    height: 53px;
+    background: url(assets/img/wollen-sie-uns-helfen.png) 0 0 no-repeat;
+    text-indent: -3000px;
+}
+
+.sidebar-context .widget {
+    border: 2px solid @wakiziColorHighlight;
+    .border-radius(6px);
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    font-size: @baseFontSize - 2;
+    line-height: @baseLineHeight - 2;
+}
+
+.sidebar-context .widget-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: @wakiziColorHighlight;
+}
+
+// Quotes widget
+.sidebar-context .widget_wakiziquotes {
+    padding: 0;
+}
+
+.sidebar-context .widget_wakiziquotes blockquote {
+    background: @wakiziColorHighlight;
+    .border-radius(0);
+    padding: 8px 20px;
+    margin: 0;
+}
+
+@media (max-width: 979px) {
+    .sidebar {
+        font-size: @baseFontSize - 2;
+    }
+
+    .sidebar-context .help-bubble {
+        position: static;
+        margin: -10px auto 30px auto;
+    }
+
+    .sidebar-context .widget-title {
+        font-size: @baseFontSize - 2;
+        margin-bottom: 5px;
+    }
+
+    .sidebar-context .widget {
+        line-height: @baseLineHeight - 2;
+    }
+}
+
+@media (max-width: 767px) {
+    .sidebar-navigation {
+        margin-bottom: 20px;
+    }
+}

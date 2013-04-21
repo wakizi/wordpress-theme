@@ -1,0 +1,56 @@
+.menu {
+    list-style: none;
+    font-family: Antropos, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-left: 35px;
+}
+
+.sub-menu {
+    list-style: disc;
+    display: none;
+}
+
+.menu .current-menu-item .sub-menu,
+.menu .current-menu-ancestor .sub-menu {
+    display: block;
+}
+
+.menu .menu-item {
+    margin-bottom: 10px;
+}
+
+.sub-menu .menu-item {
+    margin: 5px 0;
+    font-size: @baseFontSize - 2;
+    line-height: @baseFontSize;
+}
+
+.menu .menu-item > a {
+    color: #000;
+}
+
+.menu .current-menu-item,
+.menu .current-menu-item > a,
+.menu .current-menu-ancestor > a {
+    color: @wakiziColorHighlight;
+}
+
+.menu .current-menu-item > * {
+    color: #000;
+}
+
+.tinynav {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .js {
+        .tinynav {
+            display: block;
+            margin: auto;
+        }
+
+        .menu {
+            display: none
+        }
+    }
+}
