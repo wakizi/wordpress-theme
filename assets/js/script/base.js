@@ -25,5 +25,13 @@
                     });
             }
         });
+
+        $(".table").each(function() {
+            var table = $(this);
+
+            if (!table.parent().is('.table-responsive')) {
+                table.wrap('<div class="table-responsive"/>');
+            }
+        });
     });
 })(jQuery, window);
