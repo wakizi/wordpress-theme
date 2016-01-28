@@ -8,18 +8,32 @@
     }
 }
 
+.sidebar-context {
+    position: relative;
+
+    ul, ol {
+        margin-left: 0;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
 .sidebar-context h3,
-.sidebar-context h4 {
+.sidebar-context h3 a {
     font-size: @baseFontSize;
     line-height: @baseLineHeight;
 }
 
-.sidebar-context h4 {
+.sidebar-context h4,
+.sidebar-context h4 a {
+    font-size: @fontSizeSmall;
     line-height: @baseLineHeight - 2;
-}
-
-.sidebar-context {
-    position: relative;
 }
 
 .sidebar-context .help-bubble {
