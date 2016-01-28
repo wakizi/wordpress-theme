@@ -4,7 +4,7 @@ module.exports = function(grunt) {
     less: {
       style: {
         options: {
-          yuicompress: true
+          compress: true
         },
         src: 'assets/less/style.less',
         dest: 'wakizi/style.css'
